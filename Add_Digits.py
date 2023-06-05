@@ -1,10 +1,16 @@
+def add(n):
+    s=0
+    while n!=0:
+        r=n%10
+        s=s+r
+        n=n//10
+    return s
 n=int(input())
-sum=0
-while(n!=0):
-    r=n%10
-    sum=sum+r
-    n=n//10
-    if n==0 and sum>9:
-        n=sum
-        sum=0
-print(sum)
+p=add(n)
+while True:
+    if p<=9:
+        print(p)
+        break
+    else:
+        p=add(p)
+        
