@@ -8,4 +8,3 @@ while n!=0:
     n=n//10
 t=(s-p)
 print(abs(t))
-    
