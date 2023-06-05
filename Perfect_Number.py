@@ -1,10 +1,10 @@
 n=int(input())
-sum=0
+l=[]
 for i in range(1,n):
- if n%i==0:
-    sum=sum+i
-if sum==n:
-   print("True")
+    if n%i==0:
+        l.append(i)
+p=sum(l)
+if n==p:
+    print(True)
 else:
-   print("False")
-  
+    print(False)
