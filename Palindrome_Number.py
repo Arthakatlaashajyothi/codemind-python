@@ -1,7 +1,7 @@
 def palindrome(n):
-    r=str(n)
-    p=r[::-1]
-    if r==p:
+    p=str(n)
+    r=p[::-1]
+    if p==r:
         return True
     else:
         return False
@@ -12,4 +12,3 @@ for i in range(t):
         print("True")
     else:
         print("False")
-    
