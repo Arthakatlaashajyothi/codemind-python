@@ -1,17 +1,4 @@
-def reverse(num):
-    s=0
-    while num:
-        remainder=num%10
-        num=num//10
-        s=s*10+remainder
-    return s
-n=int(input())
-s=0
-if n<0:
-    s=1
-n=abs(n)
-n=reverse(n)
-if s==1:
-    print(-n)
-else:
-    print(n)
+n=input()
+s=str(n)
+p=s[::-1]
+print(p)
